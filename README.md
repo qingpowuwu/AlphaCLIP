@@ -59,6 +59,15 @@ Demo `Alpha-CLIP` with `LLaVA`:
 
 ## 🛠️ Usage
 
+### 下载 MaskImageNet 数据集
+
+```
+cd AlphaCLIP
+mkdir MaskImageNet
+wget https://huggingface.co/datasets/Zery/MaskImageNet/resolve/main/M_ImageNet_top_460k.json?download=true
+wget https://huggingface.co/datasets/Zery/MaskImageNet/resolve/main/imagenet_919.json?download=true
+```
+
 ### Installation
 our model is based on [CLIP](https://github.com/openai/CLIP), please first prepare environment for CLIP, then directly install Alpha-CLIP.
 
