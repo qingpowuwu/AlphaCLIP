@@ -35,5 +35,8 @@ you may need to adjust `self.batch_size` or use LoRA in `train_grit_1m.py` to ad
 
 # Training Alpha-CLIP (with additional MaskImageNet)
 1. download data annotations [here](https://huggingface.co/datasets/Zery/MaskImageNet)
+   ```bash
+     huggingface-cli download --repo-type dataset --resume-download Zery/MaskImageNet --local-dir MaskImageNet --local-dir-use-symlinks False
+   ```
 2. download full ImageNet-21K dataset
 3. train with `train_grit_1m+mim.py`
