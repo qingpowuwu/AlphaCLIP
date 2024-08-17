@@ -86,8 +86,8 @@ Download model from [model-zoo](https://github.com/SunzeY/AlphaCLIP/blob/main/mo
 
 ```python
 import alpha_clip
-model = alpha_clip.load("ViT-B/16", alpha_vision_ckpt_pth="checkpoints/clip_b16_grit1m_fultune_8xe.pth", device="cpu"), 
-image_features = model.visual(image, alpha)
+clip_model, preprocessor = alpha_clip.load("ViT-B/16", alpha_vision_ckpt_pth="pretrained_models/clip_b16_grit1m_fultune_8xe.pth", device="cpu"), 
+image_features = clip_model.visual(image, alpha)
 ```
 `alpha` need to be normalized via transforms when using `binary_mask` in (0, 1)
 
