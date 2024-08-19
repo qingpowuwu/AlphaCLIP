@@ -27,6 +27,13 @@ We test Alpha-CLIP on two kinds of settings during training.
 2. (Optional) Region level recognition ability measured by COCO / LVIS Classification accuracy (with full image as input). You need to prepare [COCO](https://cocodataset.org/#home)-2017 dataset accordingly.
 
 ## Training
+```bash
+pip install nltk
+pip install lvis
+pip install transformers
+pip install tensorboard
+```
+
 We use SLURM for multi-nodes training.
 ```bash
 bash train_slurm.sh
